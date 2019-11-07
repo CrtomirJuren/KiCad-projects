@@ -31,7 +31,7 @@ U 1 1 5DC2B5ED
 P 6500 3600
 F 0 "J2" H 6500 3700 50  0000 L CNN
 F 1 "5V Izhod" H 6450 3400 50  0000 L CNN
-F 2 "w_conn_screw:mors_2p" H 6500 3600 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6500 3600 50  0001 C CNN
 F 3 "~" H 6500 3600 50  0001 C CNN
 	1    6500 3600
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5DC2B6DA
 P 3650 3700
 F 0 "J1" H 3650 3500 50  0000 C CNN
 F 1 "9V Vhod" H 3700 3800 50  0000 C CNN
-F 2 "w_conn_screw:mors_2p" H 3650 3700 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3650 3700 50  0001 C CNN
 F 3 "~" H 3650 3700 50  0001 C CNN
 	1    3650 3700
 	-1   0    0    1   
