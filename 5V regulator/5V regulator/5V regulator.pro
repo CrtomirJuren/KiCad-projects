@@ -1,4 +1,4 @@
-update=7.11.2019 10:32:59
+update=8.11.2019 12:39:38
 version=1
 last_client=kicad
 [general]
@@ -15,7 +15,7 @@ LibDir=
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=../netlist/5V regulator_TH_v1.net
+LastNetListRead=5V regulator.net
 PadDrill=0.762
 PadDrillOvalY=0.762
 PadSizeH=1.524
