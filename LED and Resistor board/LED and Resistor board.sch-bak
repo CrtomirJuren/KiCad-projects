@@ -1,0 +1,70 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Learning KiCad with a simple project"
+Date "2019-11-05"
+Rev "1"
+Comp ""
+Comment1 "Črtomir Juren"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D?
+U 1 1 5DC1D4AC
+P 5950 4000
+F 0 "D?" H 5943 4216 50  0000 C CNN
+F 1 "LED" H 5943 4125 50  0000 C CNN
+F 2 "" H 5950 4000 50  0001 C CNN
+F 3 "~" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DC204E9
+P 6500 4000
+F 0 "R?" V 6707 4000 50  0000 C CNN
+F 1 "R" V 6616 4000 50  0000 C CNN
+F 2 "" V 6430 4000 50  0001 C CNN
+F 3 "~" H 6500 4000 50  0001 C CNN
+	1    6500 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC23B22
+P 5500 4250
+F 0 "#PWR?" H 5500 4000 50  0001 C CNN
+F 1 "GND" H 5505 4077 50  0000 C CNN
+F 2 "" H 5500 4250 50  0001 C CNN
+F 3 "" H 5500 4250 50  0001 C CNN
+	1    5500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC24162
+P 6950 3850
+F 0 "#PWR?" H 6950 3700 50  0001 C CNN
+F 1 "+5V" H 6965 4023 50  0000 C CNN
+F 2 "" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 3850 6950 4000
+Wire Wire Line
+	6950 4000 6650 4000
+Wire Wire Line
+	6350 4000 6100 4000
+Wire Wire Line
+	5800 4000 5500 4000
+Wire Wire Line
+	5500 4000 5500 4250
+$EndSCHEMATC

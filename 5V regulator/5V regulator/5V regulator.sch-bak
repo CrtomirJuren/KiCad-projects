@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:5V regulator-cache
-EELAYER 30 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -51,6 +51,8 @@ Text Label 3900 3600 0    50   ~ 0
 9V
 Text Label 6150 3600 0    50   ~ 0
 5V
+Text Label 4050 4300 0    50   ~ 0
+GND
 Text Label 6100 4100 0    50   ~ 0
 GND
 Wire Wire Line
@@ -186,6 +188,4 @@ Wire Wire Line
 Wire Wire Line
 	6300 3600 5850 3600
 Connection ~ 5850 3600
-Text Label 5000 4200 0    50   ~ 0
-GND
 $EndSCHEMATC
