@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:RaspberryPIFullStackHAT-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Bitmap
-Pos 2250 1550
+Pos 2200 6750
 Scale 1.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 03 EE 00 00 02 58 08 02 00 00 00 73 62 2B 
@@ -15572,80 +15573,417 @@ A7 A1 10 42 08 21 BD 45 A9 3C 21 84 00 00 EE B9 07 93 26 01 40 65 A5 8F 23 21 84
 EndData
 $EndBitmap
 $Comp
-L Connector:Raspberry_Pi_2_3 J1
-U 1 1 5DE7F65F
-P 6950 4150
-F 0 "J1" H 6950 5631 50  0000 C CNN
-F 1 "Raspberry_Pi_2_3" H 6950 5540 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 6950 4150 50  0001 C CNN
-F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 6950 4150 50  0001 C CNN
-	1    6950 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Switch:SW_DPST SW1
 U 1 1 5DE823C3
-P 4500 3150
-F 0 "SW1" H 4500 3475 50  0000 C CNN
-F 1 "SW_DPST" H 4500 3384 50  0000 C CNN
-F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 4500 3150 50  0001 C CNN
-F 3 "~" H 4500 3150 50  0001 C CNN
-	1    4500 3150
+P 5600 3950
+F 0 "SW1" H 5600 4275 50  0000 C CNN
+F 1 "SW_DPST" H 5600 4184 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 5600 3950 50  0001 C CNN
+F 3 "~" H 5600 3950 50  0001 C CNN
+	1    5600 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5DE8351A
-P 5300 4400
-F 0 "R2" H 5230 4354 50  0000 R CNN
-F 1 "R" H 5230 4445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 5230 4400 50  0001 C CNN
-F 3 "~" H 5300 4400 50  0001 C CNN
-	1    5300 4400
-	-1   0    0    1   
+P 3850 3750
+F 0 "R2" H 3780 3704 50  0000 R CNN
+F 1 "R" H 3780 3795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3780 3750 50  0001 C CNN
+F 3 "~" H 3850 3750 50  0001 C CNN
+	1    3850 3750
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R1
 U 1 1 5DE83A27
-P 4000 3400
-F 0 "R1" H 3930 3354 50  0000 R CNN
-F 1 "R" H 3930 3445 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 3930 3400 50  0001 C CNN
-F 3 "~" H 4000 3400 50  0001 C CNN
-	1    4000 3400
+P 5950 4200
+F 0 "R1" H 5880 4154 50  0000 R CNN
+F 1 "R" H 5880 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5880 4200 50  0001 C CNN
+F 3 "~" H 5950 4200 50  0001 C CNN
+	1    5950 4200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R3
 U 1 1 5DE83C17
-P 8500 4000
-F 0 "R3" H 8430 3954 50  0000 R CNN
-F 1 "R" H 8430 4045 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8430 4000 50  0001 C CNN
-F 3 "~" H 8500 4000 50  0001 C CNN
-	1    8500 4000
+P 6150 2200
+F 0 "R3" H 6080 2154 50  0000 R CNN
+F 1 "R" H 6080 2245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6080 2200 50  0001 C CNN
+F 3 "~" H 6150 2200 50  0001 C CNN
+	1    6150 2200
 	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED D1
 U 1 1 5DE84930
-P 8500 4450
-F 0 "D1" V 8539 4333 50  0000 R CNN
-F 1 "LED" V 8448 4333 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 8500 4450 50  0001 C CNN
-F 3 "~" H 8500 4450 50  0001 C CNN
-	1    8500 4450
+P 6150 2550
+F 0 "D1" V 6189 2433 50  0000 R CNN
+F 1 "LED" V 6098 2433 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 6150 2550 50  0001 C CNN
+F 3 "~" H 6150 2550 50  0001 C CNN
+	1    6150 2550
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Sensor:DHT11 U1
 U 1 1 5DE8528A
-P 5250 3650
-F 0 "U1" H 5006 3696 50  0000 R CNN
-F 1 "DHT22" H 5006 3605 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5250 3250 50  0001 C CNN
-F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 5400 3900 50  0001 C CNN
-	1    5250 3650
+P 3600 4100
+F 0 "U1" H 3356 4146 50  0000 R CNN
+F 1 "DHT22" H 3356 4055 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 3700 50  0001 C CNN
+F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3750 4350 50  0001 C CNN
+	1    3600 4100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4050 3750 4050 4100
+Wire Wire Line
+	4050 4100 3900 4100
+Wire Wire Line
+	4050 3750 4000 3750
+Wire Wire Line
+	3700 3750 3600 3750
+Wire Wire Line
+	3600 3750 3600 3800
+Wire Wire Line
+	5800 3850 5800 3950
+Connection ~ 5800 3950
+Wire Wire Line
+	5800 3950 5800 4050
+Wire Wire Line
+	5400 3850 5400 3950
+Connection ~ 5400 3950
+Wire Wire Line
+	5400 3950 5400 4050
+$Comp
+L Connector:Raspberry_Pi_2_3 J1
+U 1 1 5DE7F65F
+P 8150 3650
+F 0 "J1" H 8150 5131 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 8150 5040 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 8150 3650 50  0001 C CNN
+F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8150 3650 50  0001 C CNN
+	1    8150 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7350 2850
+NoConn ~ 7350 3050
+NoConn ~ 7350 3250
+NoConn ~ 7350 3450
+NoConn ~ 7350 3550
+NoConn ~ 7350 3650
+NoConn ~ 7350 3850
+NoConn ~ 7350 3950
+NoConn ~ 7350 4050
+NoConn ~ 7350 4150
+NoConn ~ 7350 4250
+NoConn ~ 7350 4350
+NoConn ~ 7950 2350
+NoConn ~ 8050 2350
+NoConn ~ 8350 2350
+NoConn ~ 8950 2750
+NoConn ~ 8950 2850
+NoConn ~ 8950 3050
+NoConn ~ 8950 3150
+NoConn ~ 8950 3450
+NoConn ~ 8950 3550
+NoConn ~ 8950 3750
+NoConn ~ 8950 3850
+NoConn ~ 8950 3950
+NoConn ~ 8950 4050
+NoConn ~ 8950 4150
+NoConn ~ 8950 4350
+NoConn ~ 8950 4450
+NoConn ~ 8450 4950
+NoConn ~ 8350 4950
+NoConn ~ 8250 4950
+NoConn ~ 8150 4950
+NoConn ~ 8050 4950
+NoConn ~ 7950 4950
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DEE26B0
+P 3600 2000
+F 0 "#FLG0102" H 3600 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 3600 2350 50  0000 C CNN
+F 2 "" H 3600 2000 50  0001 C CNN
+F 3 "~" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DEE524E
+P 6150 2850
+F 0 "#PWR0101" H 6150 2600 50  0001 C CNN
+F 1 "GND" H 6155 2677 50  0000 C CNN
+F 2 "" H 6150 2850 50  0001 C CNN
+F 3 "" H 6150 2850 50  0001 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2700 6150 2850
+$Comp
+L power:GND #PWR0102
+U 1 1 5DEE6974
+P 3600 4500
+F 0 "#PWR0102" H 3600 4250 50  0001 C CNN
+F 1 "GND" H 3605 4327 50  0000 C CNN
+F 2 "" H 3600 4500 50  0001 C CNN
+F 3 "" H 3600 4500 50  0001 C CNN
+	1    3600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DEE7BEA
+P 3600 1850
+F 0 "#FLG0101" H 3600 1925 50  0001 C CNN
+F 1 "PWR_FLAG" V 3600 2200 50  0000 C CNN
+F 2 "" H 3600 1850 50  0001 C CNN
+F 3 "~" H 3600 1850 50  0001 C CNN
+	1    3600 1850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DEE42C0
+P 7750 5300
+F 0 "#PWR0103" H 7750 5050 50  0001 C CNN
+F 1 "GND" H 7755 5127 50  0000 C CNN
+F 2 "" H 7750 5300 50  0001 C CNN
+F 3 "" H 7750 5300 50  0001 C CNN
+	1    7750 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 4950 7750 5200
+Connection ~ 7750 5200
+Wire Wire Line
+	7750 5200 7750 5300
+Wire Wire Line
+	7850 4950 7850 5200
+Wire Wire Line
+	7850 5200 7750 5200
+Wire Wire Line
+	3600 4400 3600 4500
+$Comp
+L power:GND #PWR0104
+U 1 1 5DEEC01D
+P 5950 4400
+F 0 "#PWR0104" H 5950 4150 50  0001 C CNN
+F 1 "GND" H 5955 4227 50  0000 C CNN
+F 2 "" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5950 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3950 5950 3950
+Wire Wire Line
+	5950 4350 5950 4400
+Wire Wire Line
+	5950 4050 5950 3950
+Text Label 7350 2750 2    50   ~ 0
+button_input
+Text Label 6050 3950 0    50   ~ 0
+button_input
+Wire Wire Line
+	5950 3950 6050 3950
+Connection ~ 5950 3950
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5DEEE626
+P 8250 2000
+F 0 "#PWR0105" H 8250 1850 50  0001 C CNN
+F 1 "+3V3" H 8265 2173 50  0000 C CNN
+F 2 "" H 8250 2000 50  0001 C CNN
+F 3 "" H 8250 2000 50  0001 C CNN
+	1    8250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5DEF01A9
+P 5300 3950
+F 0 "#PWR0106" H 5300 3800 50  0001 C CNN
+F 1 "+3V3" V 5315 4078 50  0000 L CNN
+F 2 "" H 5300 3950 50  0001 C CNN
+F 3 "" H 5300 3950 50  0001 C CNN
+	1    5300 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 3950 5400 3950
+$Comp
+L power:+3V3 #PWR0107
+U 1 1 5DEF1398
+P 3600 3650
+F 0 "#PWR0107" H 3600 3500 50  0001 C CNN
+F 1 "+3V3" H 3615 3823 50  0000 C CNN
+F 2 "" H 3600 3650 50  0001 C CNN
+F 3 "" H 3600 3650 50  0001 C CNN
+	1    3600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3650 3600 3750
+Connection ~ 3600 3750
+Text Label 7350 3150 2    50   ~ 0
+DHT22_input
+Text Label 4200 4100 0    50   ~ 0
+DHT22_input
+Wire Wire Line
+	4050 4100 4200 4100
+Connection ~ 4050 4100
+Text Label 8950 3350 0    50   ~ 0
+led_output
+Text Label 6150 1900 0    50   ~ 0
+led_output
+Wire Wire Line
+	6150 2350 6150 2400
+Wire Wire Line
+	6150 1900 6150 2050
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5DF02D6C
+P 3800 2000
+F 0 "#PWR0108" H 3800 1850 50  0001 C CNN
+F 1 "+3V3" V 3815 2128 50  0000 L CNN
+F 2 "" H 3800 2000 50  0001 C CNN
+F 3 "" H 3800 2000 50  0001 C CNN
+	1    3800 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8250 2000 8250 2350
+$Comp
+L power:GND #PWR0109
+U 1 1 5DF039CC
+P 3800 1850
+F 0 "#PWR0109" H 3800 1600 50  0001 C CNN
+F 1 "GND" V 3805 1722 50  0000 R CNN
+F 2 "" H 3800 1850 50  0001 C CNN
+F 3 "" H 3800 1850 50  0001 C CNN
+	1    3800 1850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 1850 3800 1850
+Wire Wire Line
+	3600 2000 3800 2000
+Text Notes 2950 1650 0    50   ~ 0
+POWER FLAGS
+Wire Notes Line
+	2950 1650 4450 1650
+Wire Notes Line
+	4450 1650 4450 2150
+Wire Notes Line
+	4450 2150 2950 2150
+Wire Notes Line
+	2950 2150 2950 1650
+$Comp
+L Device:R R4
+U 1 1 5DF0EFF4
+P 4900 2250
+F 0 "R4" H 4830 2204 50  0000 R CNN
+F 1 "R" H 4830 2295 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 2250 50  0001 C CNN
+F 3 "~" H 4900 2250 50  0001 C CNN
+	1    4900 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5DF0EFFA
+P 4900 2600
+F 0 "D2" V 4939 2483 50  0000 R CNN
+F 1 "LED" V 4848 2483 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 4900 2600 50  0001 C CNN
+F 3 "~" H 4900 2600 50  0001 C CNN
+	1    4900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5DF0F000
+P 4900 2850
+F 0 "#PWR02" H 4900 2600 50  0001 C CNN
+F 1 "GND" H 4905 2677 50  0000 C CNN
+F 2 "" H 4900 2850 50  0001 C CNN
+F 3 "" H 4900 2850 50  0001 C CNN
+	1    4900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2750 4900 2850
+Wire Wire Line
+	4900 2400 4900 2450
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5DF0F66E
+P 4900 2000
+F 0 "#PWR01" H 4900 1850 50  0001 C CNN
+F 1 "+3V3" H 4915 2173 50  0000 C CNN
+F 2 "" H 4900 2000 50  0001 C CNN
+F 3 "" H 4900 2000 50  0001 C CNN
+	1    4900 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2000 4900 2100
+Wire Notes Line
+	4600 1650 4600 3100
+Wire Notes Line
+	4600 3100 5250 3100
+Wire Notes Line
+	5250 3100 5250 1650
+Wire Notes Line
+	5250 1650 4600 1650
+Wire Notes Line
+	5800 1650 5800 3100
+Wire Notes Line
+	5800 3100 6600 3100
+Wire Notes Line
+	6600 3100 6600 1650
+Wire Notes Line
+	6600 1650 5800 1650
+Wire Notes Line
+	3000 3300 3000 4750
+Wire Notes Line
+	3000 4750 4800 4750
+Wire Notes Line
+	4800 4750 4800 3300
+Wire Notes Line
+	4800 3300 3000 3300
+Wire Notes Line
+	4850 3300 4850 4750
+Wire Notes Line
+	4850 4750 6600 4750
+Wire Notes Line
+	6600 4750 6600 3300
+Wire Notes Line
+	6600 3300 4850 3300
+Wire Notes Line
+	6750 1650 6750 5700
+Wire Notes Line
+	6750 5700 9600 5700
+Wire Notes Line
+	9600 5700 9600 1650
+Wire Notes Line
+	9600 1650 6750 1650
+Text Notes 4850 3300 0    50   ~ 0
+N1 - momentary button
+Text Notes 3000 3300 0    50   ~ 0
+N2 - sensor DHT22
+Text Notes 6750 1650 0    50   ~ 0
+N3 - Raspberry Pi
+Text Notes 4600 1650 0    50   ~ 0
+N5 - power indicator led
+Text Notes 5800 1650 0    50   ~ 0
+N4 - indicator led
 $EndSCHEMATC
