@@ -15633,7 +15633,7 @@ U 1 1 5DE8528A
 P 3600 4100
 F 0 "U1" H 3356 4146 50  0000 R CNN
 F 1 "DHT22" H 3356 4055 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3600 3700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3600 3700 50  0001 C CNN
 F 3 "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf" H 3750 4350 50  0001 C CNN
 	1    3600 4100
 	1    0    0    -1  
@@ -15664,7 +15664,7 @@ U 1 1 5DE7F65F
 P 8150 3650
 F 0 "J1" H 8150 5131 50  0000 C CNN
 F 1 "Raspberry_Pi_2_3" H 8150 5040 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 8150 3650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 8150 3650 50  0001 C CNN
 F 3 "https://www.raspberrypi.org/documentation/hardware/raspberrypi/schematics/rpi_SCH_3bplus_1p0_reduced.pdf" H 8150 3650 50  0001 C CNN
 	1    8150 3650
 	1    0    0    -1  
