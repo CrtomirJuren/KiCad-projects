@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name LCD-Rpi3-HAT)(type KiCad)(uri C:/Users/crtom/Documents/KiCad-projects/LCD-Rpi3-HAT)(options "")(descr ""))
+)

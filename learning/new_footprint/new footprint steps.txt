@@ -1,0 +1,5 @@
+CREATE A NEW FOOTPRINT
+1.) (Fab) Draw the outline
+2.) (Cu) draw the pads
+3.) (CtrYd) draw the courtyard
+4.) (SilkS) draw the silkscreen graphics

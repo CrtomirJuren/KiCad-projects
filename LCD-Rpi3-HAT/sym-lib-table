@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name LCD-Rpi3-HAT)(type Legacy)(uri ${KIPRJMOD}/LCD-Rpi3-HAT.lib)(options "")(descr ""))
+  (lib (name LCD-Rpi3-HAT-rescue)(type Legacy)(uri ${KIPRJMOD}/LCD-Rpi3-HAT-rescue.lib)(options "")(descr ""))
+)

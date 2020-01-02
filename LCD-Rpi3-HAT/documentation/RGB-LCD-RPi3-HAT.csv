@@ -1,0 +1,15 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"R3,R1,R2,R4,R5,R9,R11,R12,R13";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";9;"10k";;;
+2;"DS1";"LCD_16X2_MC21605H6WK";1;"WC1602A";;;
+3;"P1";"PinSocket_2x20_P2.54mm_Vertical";1;"Conn_02x20_Odd_Even";;;
+4;"MK4,MK3,MK2,MK1";"MountingHole_2.7mm_M2.5";4;"M2.5";;;
+5;"D1,D2,D3";"LED_D3.0mm";3;"LED";;;
+6;"JP1,JP2,JP3";"PinHeader_1x02_P2.54mm_Vertical";3;"Jumper_NC_Small";;;
+7;"R6,R7,R8,R10";"R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal";4;"220";;;
+8;"RV1";"Potentiometer_Vishay_T73YP_Vertical";1;"10k";;;
+9;"U1";"DIP-28_W7.62mm";1;"MCP23017-E_SP";;;
+10;"SW1";"SW_PUSHBUTTON_PTH";1;"SW_up";;;
+11;"SW2";"SW_PUSHBUTTON_PTH";1;"SW_down";;;
+12;"SW3";"SW_PUSHBUTTON_PTH";1;"SW_enter";;;
+13;"SW4";"SW_PUSHBUTTON_PTH";1;"SW_left";;;
+14;"SW5";"SW_PUSHBUTTON_PTH";1;"SW_right";;;

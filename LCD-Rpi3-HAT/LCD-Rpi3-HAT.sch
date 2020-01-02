@@ -1,0 +1,1329 @@
+EESchema Schematic File Version 4
+LIBS:LCD-Rpi3-HAT-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RGB-LCD-RPi3-HAT"
+Date "2019-12-22"
+Rev "v1"
+Comp ""
+Comment1 "Designedby Črtomir Juren"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+5V #PWR01
+U 1 1 580C1B61
+P 2550 900
+F 0 "#PWR01" H 2550 750 50  0001 C CNN
+F 1 "+5V" H 2550 1040 50  0000 C CNN
+F 2 "" H 2550 900 50  0000 C CNN
+F 3 "" H 2550 900 50  0000 C CNN
+	1    2550 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 900  2550 1050
+Wire Wire Line
+	2550 1050 2350 1050
+Wire Wire Line
+	2550 1150 2350 1150
+Connection ~ 2550 1050
+$Comp
+L power:GND #PWR02
+U 1 1 580C1D11
+P 2450 3100
+F 0 "#PWR02" H 2450 2850 50  0001 C CNN
+F 1 "GND" H 2450 2950 50  0000 C CNN
+F 2 "" H 2450 3100 50  0000 C CNN
+F 3 "" H 2450 3100 50  0000 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 1250 2450 1650
+Wire Wire Line
+	2450 2650 2350 2650
+Wire Wire Line
+	2450 2450 2350 2450
+Connection ~ 2450 2650
+Wire Wire Line
+	2450 1950 2350 1950
+Connection ~ 2450 2450
+Wire Wire Line
+	2450 1650 2350 1650
+Connection ~ 2450 1950
+$Comp
+L power:GND #PWR03
+U 1 1 580C1E01
+P 1750 3100
+F 0 "#PWR03" H 1750 2850 50  0001 C CNN
+F 1 "GND" H 1750 2950 50  0000 C CNN
+F 2 "" H 1750 3100 50  0000 C CNN
+F 3 "" H 1750 3100 50  0000 C CNN
+	1    1750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2950 1850 2950
+Wire Wire Line
+	1750 1450 1750 2250
+Wire Wire Line
+	1750 2250 1850 2250
+Connection ~ 1750 2950
+Connection ~ 1650 1050
+Wire Wire Line
+	1650 1850 1850 1850
+Wire Wire Line
+	1650 1050 1850 1050
+Wire Wire Line
+	1650 900  1650 1050
+$Comp
+L power:+3.3V #PWR04
+U 1 1 580C1BC1
+P 1650 900
+F 0 "#PWR04" H 1650 750 50  0001 C CNN
+F 1 "+3.3V" H 1650 1040 50  0000 C CNN
+F 2 "" H 1650 900 50  0000 C CNN
+F 3 "" H 1650 900 50  0000 C CNN
+	1    1650 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 1450 1850 1450
+Connection ~ 1750 2250
+Wire Wire Line
+	1850 1150 700  1150
+Wire Wire Line
+	700  1250 1850 1250
+Wire Wire Line
+	700  1350 1850 1350
+Wire Wire Line
+	1850 1550 700  1550
+Wire Wire Line
+	700  1650 1850 1650
+Wire Wire Line
+	700  1750 1850 1750
+Wire Wire Line
+	1850 1950 700  1950
+Wire Wire Line
+	700  2050 1850 2050
+Wire Wire Line
+	700  2150 1850 2150
+Wire Wire Line
+	1850 2350 700  2350
+Wire Wire Line
+	700  2450 1850 2450
+Wire Wire Line
+	700  2550 1850 2550
+Wire Wire Line
+	1850 2650 700  2650
+Wire Wire Line
+	700  2750 1850 2750
+Wire Wire Line
+	700  2850 1850 2850
+Wire Wire Line
+	2350 2750 3400 2750
+Wire Wire Line
+	2350 2850 3400 2850
+Wire Wire Line
+	2350 2250 3400 2250
+Wire Wire Line
+	2350 2350 3400 2350
+Wire Wire Line
+	2350 2050 3400 2050
+Wire Wire Line
+	2350 2150 3400 2150
+Wire Wire Line
+	2350 1750 3400 1750
+Wire Wire Line
+	2350 1850 3400 1850
+Wire Wire Line
+	2350 1450 3400 1450
+Wire Wire Line
+	2350 1550 3400 1550
+Wire Wire Line
+	2350 1350 3400 1350
+Wire Wire Line
+	2350 2550 3400 2550
+Text Label 700  1150 0    50   ~ 0
+GPIO2(SDA1)
+Text Label 700  1250 0    50   ~ 0
+GPIO3(SCL1)
+Text Label 700  1350 0    50   ~ 0
+GPIO4(GCLK)
+Text Label 700  1550 0    50   ~ 0
+GPIO17(GEN0)
+Text Label 700  1650 0    50   ~ 0
+GPIO27(GEN2)
+Text Label 700  1750 0    50   ~ 0
+GPIO22(GEN3)
+Text Label 700  1950 0    50   ~ 0
+GPIO10(SPI0_MOSI)
+Text Label 700  2050 0    50   ~ 0
+GPIO9(SPI0_MISO)
+Text Label 700  2150 0    50   ~ 0
+GPIO11(SPI0_SCK)
+Text Label 700  2350 0    50   ~ 0
+ID_SD
+Text Label 700  2450 0    50   ~ 0
+GPIO5
+Text Label 700  2550 0    50   ~ 0
+GPIO6
+Text Label 700  2650 0    50   ~ 0
+GPIO13(PWM1)
+Text Label 700  2750 0    50   ~ 0
+GPIO19(SPI1_MISO)
+Text Label 700  2850 0    50   ~ 0
+GPIO26
+Text Label 3400 2850 2    50   ~ 0
+GPIO20(SPI1_MOSI)
+Text Label 3400 2750 2    50   ~ 0
+GPIO16
+Text Label 3400 2550 2    50   ~ 0
+GPIO12(PWM0)
+Text Label 3400 2350 2    50   ~ 0
+ID_SC
+Text Label 3400 2250 2    50   ~ 0
+GPIO7(SPI1_CE_N)
+Text Label 3400 2150 2    50   ~ 0
+GPIO8(SPI0_CE_N)
+Text Label 3400 2050 2    50   ~ 0
+GPIO25(GEN6)
+Text Label 3400 1850 2    50   ~ 0
+GPIO24(GEN5)
+Text Label 3400 1750 2    50   ~ 0
+GPIO23(GEN4)
+Text Label 3400 1550 2    50   ~ 0
+GPIO18(GEN1)(PWM0)
+Text Label 3400 1450 2    50   ~ 0
+GPIO15(RXD0)
+Text Label 3400 1350 2    50   ~ 0
+GPIO14(TXD0)
+Wire Wire Line
+	2450 1250 2350 1250
+Connection ~ 2450 1650
+Text Notes 500  7750 0    50   ~ 0
+ID_SD and ID_SC PINS:\nThese pins are reserved for HAT ID EEPROM.\n\nAt boot time this I2C interface will be\ninterrogated to look for an EEPROM\nthat identifes the attached board and\nallows automagic setup of the GPIOs\n(and optionally, Linux drivers).\n\nDO NOT USE these pins for anything other\nthan attaching an I2C ID EEPROM. Leave\nunconnected if ID EEPROM not required.
+$Comp
+L LCD-Rpi3-HAT-rescue:Mounting_Hole-Mechanical-RGB-LCD-RPi3-HAT-rescue-LCD-Rpi3-HAT-rescue MK1
+U 1 1 5834FB2E
+P 2350 7450
+F 0 "MK1" H 2450 7496 50  0000 L CNN
+F 1 "M2.5" H 2450 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2350 7450 60  0001 C CNN
+F 3 "" H 2350 7450 60  0001 C CNN
+	1    2350 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD-Rpi3-HAT-rescue:Mounting_Hole-Mechanical-RGB-LCD-RPi3-HAT-rescue-LCD-Rpi3-HAT-rescue MK3
+U 1 1 5834FBEF
+P 2800 7450
+F 0 "MK3" H 2900 7496 50  0000 L CNN
+F 1 "M2.5" H 2900 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2800 7450 60  0001 C CNN
+F 3 "" H 2800 7450 60  0001 C CNN
+	1    2800 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD-Rpi3-HAT-rescue:Mounting_Hole-Mechanical-RGB-LCD-RPi3-HAT-rescue-LCD-Rpi3-HAT-rescue MK2
+U 1 1 5834FC19
+P 2350 7650
+F 0 "MK2" H 2450 7696 50  0000 L CNN
+F 1 "M2.5" H 2450 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2350 7650 60  0001 C CNN
+F 3 "" H 2350 7650 60  0001 C CNN
+	1    2350 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LCD-Rpi3-HAT-rescue:Mounting_Hole-Mechanical-RGB-LCD-RPi3-HAT-rescue-LCD-Rpi3-HAT-rescue MK4
+U 1 1 5834FC4F
+P 2800 7650
+F 0 "MK4" H 2900 7696 50  0000 L CNN
+F 1 "M2.5" H 2900 7605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 2800 7650 60  0001 C CNN
+F 3 "" H 2800 7650 60  0001 C CNN
+	1    2800 7650
+	1    0    0    -1  
+$EndComp
+Text Notes 2350 7300 0    50   ~ 0
+Mounting Holes
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even P1
+U 1 1 59AD464A
+P 2050 1950
+F 0 "P1" H 2100 3067 50  0000 C CNN
+F 1 "Conn_02x20_Odd_Even" H 2100 2976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2800 1000 50  0001 C CNN
+F 3 "" H -2800 1000 50  0001 C CNN
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2950 3400 2950
+Text Label 3400 2950 2    50   ~ 0
+GPIO21(SPI1_SCK)
+Wire Wire Line
+	2550 1050 2550 1150
+Wire Wire Line
+	2450 2650 2450 3100
+Wire Wire Line
+	2450 2450 2450 2650
+Wire Wire Line
+	2450 1950 2450 2450
+Wire Wire Line
+	1750 2950 1750 3100
+Wire Wire Line
+	1650 1050 1650 1850
+Wire Wire Line
+	1750 2250 1750 2950
+Wire Wire Line
+	2450 1650 2450 1950
+Wire Wire Line
+	4650 4700 3900 4700
+Wire Wire Line
+	4650 4800 3900 4800
+Wire Wire Line
+	4650 4900 3900 4900
+Wire Wire Line
+	4650 5000 3900 5000
+Wire Wire Line
+	4650 5100 3900 5100
+Wire Wire Line
+	4650 5200 3900 5200
+Wire Wire Line
+	4650 5300 3900 5300
+Wire Wire Line
+	4650 5400 3900 5400
+Wire Wire Line
+	4650 5600 3900 5600
+Wire Wire Line
+	4650 5700 3900 5700
+Wire Wire Line
+	4650 5800 3900 5800
+Wire Wire Line
+	4650 5900 3900 5900
+Wire Wire Line
+	4650 6000 3900 6000
+Wire Wire Line
+	4650 6100 3900 6100
+Wire Wire Line
+	4650 6200 3900 6200
+Wire Wire Line
+	4650 6300 3900 6300
+Wire Wire Line
+	4650 6400 3900 6400
+Text Notes 2200 3900 0    50   ~ 0
+STUDY\n1.) Connecting RPi to MCP23017-e_sp
+$Comp
+L power:+5V #PWR011
+U 1 1 5E03D794
+P 5050 4350
+F 0 "#PWR011" H 5050 4200 50  0001 C CNN
+F 1 "+5V" H 5050 4490 50  0000 C CNN
+F 2 "" H 5050 4350 50  0000 C CNN
+F 3 "" H 5050 4350 50  0000 C CNN
+	1    5050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4350 5050 4400
+Text Label 3900 6300 0    50   ~ 0
+GPIO2(SDA1)
+Text Label 3900 6400 0    50   ~ 0
+GPIO3(SCL1)
+$Comp
+L power:GND #PWR012
+U 1 1 5DFFBAD5
+P 5050 7200
+F 0 "#PWR012" H 5050 6950 50  0001 C CNN
+F 1 "GND" H 5050 7050 50  0000 C CNN
+F 2 "" H 5050 7200 50  0000 C CNN
+F 3 "" H 5050 7200 50  0000 C CNN
+	1    5050 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:WC1602A DS1
+U 1 1 5DFF9736
+P 9750 3450
+F 0 "DS1" H 10050 4350 50  0000 C CNN
+F 1 "WC1602A" H 10050 4250 50  0000 C CNN
+F 2 "RGB-LCD-RPi3-HAT:LCD_16X2_MC21605H6WK" H 9750 2550 50  0001 C CIN
+F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 10450 3450 50  0001 C CNN
+	1    9750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW1
+U 1 1 5DFF9DA8
+P 4800 1000
+F 0 "SW1" H 4800 1285 50  0000 C CNN
+F 1 "SW_up" H 4800 1194 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 4800 1200 50  0001 C CNN
+F 3 "~" H 4800 1200 50  0001 C CNN
+	1    4800 1000
+	1    0    0    -1  
+$EndComp
+Text Notes 2150 3650 0    50   ~ 0
+INPUTS\n- 4 buttons
+Wire Wire Line
+	4600 1000 4500 1000
+Wire Wire Line
+	4500 1000 4500 1100
+Wire Wire Line
+	4500 1200 4600 1200
+Wire Wire Line
+	4500 1100 4350 1100
+Connection ~ 4500 1100
+Wire Wire Line
+	4500 1100 4500 1200
+Wire Wire Line
+	5100 1000 5100 1100
+Wire Wire Line
+	5100 1200 5000 1200
+Wire Wire Line
+	5000 1000 5100 1000
+Wire Wire Line
+	5100 1100 5250 1100
+Connection ~ 5100 1100
+Wire Wire Line
+	5100 1100 5100 1200
+$Comp
+L Device:R R1
+U 1 1 5E005735
+P 5250 1300
+F 0 "R1" H 5320 1346 50  0000 L CNN
+F 1 "10k" H 5320 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 1300 50  0001 C CNN
+F 3 "~" H 5250 1300 50  0001 C CNN
+	1    5250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1100 5250 1150
+Connection ~ 5250 1100
+$Comp
+L power:GND #PWR013
+U 1 1 5E00A53D
+P 5250 1500
+F 0 "#PWR013" H 5250 1250 50  0001 C CNN
+F 1 "GND" H 5250 1350 50  0000 C CNN
+F 2 "" H 5250 1500 50  0000 C CNN
+F 3 "" H 5250 1500 50  0000 C CNN
+	1    5250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1500 5250 1450
+Wire Wire Line
+	5250 1100 5450 1100
+$Comp
+L power:+5V #PWR08
+U 1 1 5E013FC1
+P 4350 1100
+F 0 "#PWR08" H 4350 950 50  0001 C CNN
+F 1 "+5V" H 4350 1240 50  0000 C CNN
+F 2 "" H 4350 1100 50  0000 C CNN
+F 3 "" H 4350 1100 50  0000 C CNN
+	1    4350 1100
+	0    -1   -1   0   
+$EndComp
+Text Label 5450 1100 0    50   ~ 0
+button_1_up
+$Comp
+L power:GND #PWR020
+U 1 1 5E020F46
+P 8600 1750
+F 0 "#PWR020" H 8600 1500 50  0001 C CNN
+F 1 "GND" H 8600 1600 50  0000 C CNN
+F 2 "" H 8600 1750 50  0000 C CNN
+F 3 "" H 8600 1750 50  0000 C CNN
+	1    8600 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1050 8600 900 
+$Comp
+L Device:R R6
+U 1 1 5E0211EC
+P 8600 1200
+F 0 "R6" H 8670 1246 50  0000 L CNN
+F 1 "220" H 8670 1155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 8530 1200 50  0001 C CNN
+F 3 "~" H 8600 1200 50  0001 C CNN
+	1    8600 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5E02BE3A
+P 8600 1550
+F 0 "D1" V 8639 1433 50  0000 R CNN
+F 1 "LED" V 8548 1433 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 8600 1550 50  0001 C CNN
+F 3 "~" H 8600 1550 50  0001 C CNN
+	1    8600 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8600 1350 8600 1400
+Wire Wire Line
+	8600 1700 8600 1750
+Text Label 8450 900  0    50   ~ 0
+led_1_green
+Wire Wire Line
+	8600 900  8450 900 
+$Comp
+L power:GND #PWR021
+U 1 1 5E0357BB
+P 9250 1750
+F 0 "#PWR021" H 9250 1500 50  0001 C CNN
+F 1 "GND" H 9250 1600 50  0000 C CNN
+F 2 "" H 9250 1750 50  0000 C CNN
+F 3 "" H 9250 1750 50  0000 C CNN
+	1    9250 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 1050 9250 900 
+$Comp
+L Device:R R7
+U 1 1 5E0357C2
+P 9250 1200
+F 0 "R7" H 9320 1246 50  0000 L CNN
+F 1 "220" H 9320 1155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9180 1200 50  0001 C CNN
+F 3 "~" H 9250 1200 50  0001 C CNN
+	1    9250 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5E0357C8
+P 9250 1550
+F 0 "D2" V 9289 1433 50  0000 R CNN
+F 1 "LED" V 9198 1433 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 9250 1550 50  0001 C CNN
+F 3 "~" H 9250 1550 50  0001 C CNN
+	1    9250 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 1350 9250 1400
+Wire Wire Line
+	9250 1700 9250 1750
+Text Label 9100 900  0    50   ~ 0
+led_2_yellow
+Wire Wire Line
+	9250 900  9100 900 
+$Comp
+L power:GND #PWR024
+U 1 1 5E038CA9
+P 9850 1750
+F 0 "#PWR024" H 9850 1500 50  0001 C CNN
+F 1 "GND" H 9850 1600 50  0000 C CNN
+F 2 "" H 9850 1750 50  0000 C CNN
+F 3 "" H 9850 1750 50  0000 C CNN
+	1    9850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 1050 9850 900 
+$Comp
+L Device:R R8
+U 1 1 5E038CB0
+P 9850 1200
+F 0 "R8" H 9920 1246 50  0000 L CNN
+F 1 "220" H 9920 1155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 9780 1200 50  0001 C CNN
+F 3 "~" H 9850 1200 50  0001 C CNN
+	1    9850 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 5E038CB6
+P 9850 1550
+F 0 "D3" V 9889 1433 50  0000 R CNN
+F 1 "LED" V 9798 1433 50  0000 R CNN
+F 2 "LED_THT:LED_D3.0mm" H 9850 1550 50  0001 C CNN
+F 3 "~" H 9850 1550 50  0001 C CNN
+	1    9850 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 1350 9850 1400
+Wire Wire Line
+	9850 1700 9850 1750
+Text Label 9700 900  0    50   ~ 0
+led_3_red
+Wire Wire Line
+	9850 900  9700 900 
+$Comp
+L Switch:SW_Push_Dual SW2
+U 1 1 5E060748
+P 4800 2000
+F 0 "SW2" H 4800 2285 50  0000 C CNN
+F 1 "SW_down" H 4800 2194 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 4800 2200 50  0001 C CNN
+F 3 "~" H 4800 2200 50  0001 C CNN
+	1    4800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2000 4500 2000
+Wire Wire Line
+	4500 2000 4500 2100
+Wire Wire Line
+	4500 2200 4600 2200
+Wire Wire Line
+	4500 2100 4350 2100
+Connection ~ 4500 2100
+Wire Wire Line
+	4500 2100 4500 2200
+Wire Wire Line
+	5100 2000 5100 2100
+Wire Wire Line
+	5100 2200 5000 2200
+Wire Wire Line
+	5000 2000 5100 2000
+Wire Wire Line
+	5100 2100 5250 2100
+Connection ~ 5100 2100
+Wire Wire Line
+	5100 2100 5100 2200
+$Comp
+L Device:R R2
+U 1 1 5E06075A
+P 5250 2300
+F 0 "R2" H 5320 2346 50  0000 L CNN
+F 1 "10k" H 5320 2255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 2300 50  0001 C CNN
+F 3 "~" H 5250 2300 50  0001 C CNN
+	1    5250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2100 5250 2150
+Connection ~ 5250 2100
+$Comp
+L power:GND #PWR014
+U 1 1 5E060762
+P 5250 2500
+F 0 "#PWR014" H 5250 2250 50  0001 C CNN
+F 1 "GND" H 5250 2350 50  0000 C CNN
+F 2 "" H 5250 2500 50  0000 C CNN
+F 3 "" H 5250 2500 50  0000 C CNN
+	1    5250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2500 5250 2450
+Wire Wire Line
+	5250 2100 5450 2100
+$Comp
+L power:+5V #PWR09
+U 1 1 5E06076A
+P 4350 2100
+F 0 "#PWR09" H 4350 1950 50  0001 C CNN
+F 1 "+5V" H 4350 2240 50  0000 C CNN
+F 2 "" H 4350 2100 50  0000 C CNN
+F 3 "" H 4350 2100 50  0000 C CNN
+	1    4350 2100
+	0    -1   -1   0   
+$EndComp
+Text Label 5450 2100 0    50   ~ 0
+button_2_down
+$Comp
+L Switch:SW_Push_Dual SW4
+U 1 1 5E065378
+P 6800 1000
+F 0 "SW4" H 6800 1285 50  0000 C CNN
+F 1 "SW_left" H 6800 1194 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 6800 1200 50  0001 C CNN
+F 3 "~" H 6800 1200 50  0001 C CNN
+	1    6800 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1000 6500 1000
+Wire Wire Line
+	6500 1000 6500 1100
+Wire Wire Line
+	6500 1200 6600 1200
+Wire Wire Line
+	6500 1100 6350 1100
+Connection ~ 6500 1100
+Wire Wire Line
+	6500 1100 6500 1200
+Wire Wire Line
+	7100 1000 7100 1100
+Wire Wire Line
+	7100 1200 7000 1200
+Wire Wire Line
+	7000 1000 7100 1000
+Wire Wire Line
+	7100 1100 7250 1100
+Connection ~ 7100 1100
+Wire Wire Line
+	7100 1100 7100 1200
+$Comp
+L Device:R R4
+U 1 1 5E06538A
+P 7250 1300
+F 0 "R4" H 7320 1346 50  0000 L CNN
+F 1 "10k" H 7320 1255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7180 1300 50  0001 C CNN
+F 3 "~" H 7250 1300 50  0001 C CNN
+	1    7250 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1100 7250 1150
+Connection ~ 7250 1100
+$Comp
+L power:GND #PWR018
+U 1 1 5E065392
+P 7250 1500
+F 0 "#PWR018" H 7250 1250 50  0001 C CNN
+F 1 "GND" H 7250 1350 50  0000 C CNN
+F 2 "" H 7250 1500 50  0000 C CNN
+F 3 "" H 7250 1500 50  0000 C CNN
+	1    7250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1500 7250 1450
+Wire Wire Line
+	7250 1100 7450 1100
+$Comp
+L power:+5V #PWR016
+U 1 1 5E06539A
+P 6350 1100
+F 0 "#PWR016" H 6350 950 50  0001 C CNN
+F 1 "+5V" H 6350 1240 50  0000 C CNN
+F 2 "" H 6350 1100 50  0000 C CNN
+F 3 "" H 6350 1100 50  0000 C CNN
+	1    6350 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_Dual SW5
+U 1 1 5E06AD26
+P 6800 2000
+F 0 "SW5" H 6800 2285 50  0000 C CNN
+F 1 "SW_right" H 6800 2194 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 6800 2200 50  0001 C CNN
+F 3 "~" H 6800 2200 50  0001 C CNN
+	1    6800 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2000 6500 2000
+Wire Wire Line
+	6500 2000 6500 2100
+Wire Wire Line
+	6500 2200 6600 2200
+Wire Wire Line
+	6500 2100 6350 2100
+Connection ~ 6500 2100
+Wire Wire Line
+	6500 2100 6500 2200
+Wire Wire Line
+	7100 2000 7100 2100
+Wire Wire Line
+	7100 2200 7000 2200
+Wire Wire Line
+	7000 2000 7100 2000
+Wire Wire Line
+	7100 2100 7250 2100
+Connection ~ 7100 2100
+Wire Wire Line
+	7100 2100 7100 2200
+$Comp
+L Device:R R5
+U 1 1 5E06AD38
+P 7250 2300
+F 0 "R5" H 7320 2346 50  0000 L CNN
+F 1 "10k" H 7320 2255 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7180 2300 50  0001 C CNN
+F 3 "~" H 7250 2300 50  0001 C CNN
+	1    7250 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2100 7250 2150
+Connection ~ 7250 2100
+$Comp
+L power:GND #PWR019
+U 1 1 5E06AD40
+P 7250 2500
+F 0 "#PWR019" H 7250 2250 50  0001 C CNN
+F 1 "GND" H 7250 2350 50  0000 C CNN
+F 2 "" H 7250 2500 50  0000 C CNN
+F 3 "" H 7250 2500 50  0000 C CNN
+	1    7250 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 2500 7250 2450
+Wire Wire Line
+	7250 2100 7450 2100
+$Comp
+L power:+5V #PWR017
+U 1 1 5E06AD48
+P 6350 2100
+F 0 "#PWR017" H 6350 1950 50  0001 C CNN
+F 1 "+5V" H 6350 2240 50  0000 C CNN
+F 2 "" H 6350 2100 50  0000 C CNN
+F 3 "" H 6350 2100 50  0000 C CNN
+	1    6350 2100
+	0    -1   -1   0   
+$EndComp
+Text Label 7450 2100 0    50   ~ 0
+button_4_right
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5E070081
+P 1150 3750
+F 0 "#FLG02" H 1150 3825 50  0001 C CNN
+F 1 "PWR_FLAG" V 1150 3877 50  0000 L CNN
+F 2 "" H 1150 3750 50  0001 C CNN
+F 3 "~" H 1150 3750 50  0001 C CNN
+	1    1150 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5E07E731
+P 1150 3900
+F 0 "#FLG03" H 1150 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1150 4027 50  0000 L CNN
+F 2 "" H 1150 3900 50  0001 C CNN
+F 3 "~" H 1150 3900 50  0001 C CNN
+	1    1150 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR06
+U 1 1 5E07E853
+P 1350 3750
+F 0 "#PWR06" H 1350 3600 50  0001 C CNN
+F 1 "+3.3V" V 1350 4000 50  0000 C CNN
+F 2 "" H 1350 3750 50  0000 C CNN
+F 3 "" H 1350 3750 50  0000 C CNN
+	1    1350 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5E084784
+P 1150 3600
+F 0 "#FLG01" H 1150 3675 50  0001 C CNN
+F 1 "PWR_FLAG" V 1150 3727 50  0000 L CNN
+F 2 "" H 1150 3600 50  0001 C CNN
+F 3 "~" H 1150 3600 50  0001 C CNN
+	1    1150 3600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 3750 1350 3750
+Wire Wire Line
+	1150 3900 1350 3900
+$Comp
+L power:+5V #PWR07
+U 1 1 5E07F018
+P 1350 3900
+F 0 "#PWR07" H 1350 3750 50  0001 C CNN
+F 1 "+5V" V 1350 4100 50  0000 C CNN
+F 2 "" H 1350 3900 50  0000 C CNN
+F 3 "" H 1350 3900 50  0000 C CNN
+	1    1350 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 3600 1350 3600
+$Comp
+L power:GND #PWR05
+U 1 1 5E07F73B
+P 1350 3600
+F 0 "#PWR05" H 1350 3350 50  0001 C CNN
+F 1 "GND" V 1350 3400 50  0000 C CNN
+F 2 "" H 1350 3600 50  0000 C CNN
+F 3 "" H 1350 3600 50  0000 C CNN
+	1    1350 3600
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	600  3500 600  4000
+Wire Notes Line
+	600  4000 1750 4000
+Wire Notes Line
+	1750 4000 1750 3500
+Wire Notes Line
+	1750 3500 600  3500
+Text Notes 600  3500 0    50   ~ 0
+POWER FLAGS
+Wire Notes Line
+	600  650  600  3350
+Wire Notes Line
+	600  3350 3500 3350
+Wire Notes Line
+	3500 3350 3500 650 
+Wire Notes Line
+	3500 650  600  650 
+Text Notes 600  650  0    50   ~ 0
+RASPBERRY 3 CONNECTOR
+Text Label 7450 1100 0    50   ~ 0
+button_3_left
+$Comp
+L Switch:SW_Push_Dual SW3
+U 1 1 5E0E4D9D
+P 4800 2950
+F 0 "SW3" H 4800 3235 50  0000 C CNN
+F 1 "SW_enter" H 4800 3144 50  0000 C CNN
+F 2 "freetronics_footprints:SW_PUSHBUTTON_PTH" H 4800 3150 50  0001 C CNN
+F 3 "~" H 4800 3150 50  0001 C CNN
+	1    4800 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2950 4500 2950
+Wire Wire Line
+	4500 2950 4500 3050
+Wire Wire Line
+	4500 3150 4600 3150
+Wire Wire Line
+	4500 3050 4350 3050
+Connection ~ 4500 3050
+Wire Wire Line
+	4500 3050 4500 3150
+Wire Wire Line
+	5100 2950 5100 3050
+Wire Wire Line
+	5100 3150 5000 3150
+Wire Wire Line
+	5000 2950 5100 2950
+Wire Wire Line
+	5100 3050 5250 3050
+Connection ~ 5100 3050
+Wire Wire Line
+	5100 3050 5100 3150
+$Comp
+L Device:R R3
+U 1 1 5E0E4DAF
+P 5250 3250
+F 0 "R3" H 5320 3296 50  0000 L CNN
+F 1 "10k" H 5320 3205 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 3250 50  0001 C CNN
+F 3 "~" H 5250 3250 50  0001 C CNN
+	1    5250 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3050 5250 3100
+Connection ~ 5250 3050
+$Comp
+L power:GND #PWR015
+U 1 1 5E0E4DB7
+P 5250 3450
+F 0 "#PWR015" H 5250 3200 50  0001 C CNN
+F 1 "GND" H 5250 3300 50  0000 C CNN
+F 2 "" H 5250 3450 50  0000 C CNN
+F 3 "" H 5250 3450 50  0000 C CNN
+	1    5250 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3450 5250 3400
+Wire Wire Line
+	5250 3050 5450 3050
+$Comp
+L power:+5V #PWR010
+U 1 1 5E0E4DBF
+P 4350 3050
+F 0 "#PWR010" H 4350 2900 50  0001 C CNN
+F 1 "+5V" H 4350 3190 50  0000 C CNN
+F 2 "" H 4350 3050 50  0000 C CNN
+F 3 "" H 4350 3050 50  0000 C CNN
+	1    4350 3050
+	0    -1   -1   0   
+$EndComp
+Text Label 5450 3050 0    50   ~ 0
+button_5_enter
+Wire Notes Line
+	8300 650  11000 650 
+Wire Notes Line
+	11000 650  11000 2050
+Wire Notes Line
+	11000 2050 8300 2050
+Wire Notes Line
+	8300 2050 8300 650 
+Text Notes 8300 650  0    50   ~ 0
+LED INDICATORS
+Wire Notes Line
+	4000 650  4000 3750
+Wire Notes Line
+	4000 3750 8150 3750
+Wire Notes Line
+	8150 3750 8150 650 
+Wire Notes Line
+	8150 650  4000 650 
+Text Notes 4000 650  0    50   ~ 0
+BUTTONS
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5E000704
+P 10550 2850
+F 0 "RV1" H 10480 2804 50  0000 R CNN
+F 1 "10k" H 10480 2895 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Vishay_T73YP_Vertical" H 10550 2850 50  0001 C CNN
+F 3 "~" H 10550 2850 50  0001 C CNN
+	1    10550 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10150 2850 10400 2850
+$Comp
+L power:+5V #PWR022
+U 1 1 5E02DA62
+P 9750 2400
+F 0 "#PWR022" H 9750 2250 50  0001 C CNN
+F 1 "+5V" H 9750 2550 50  0000 C CNN
+F 2 "" H 9750 2400 50  0000 C CNN
+F 3 "" H 9750 2400 50  0000 C CNN
+	1    9750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2400 9750 2450
+$Comp
+L power:GND #PWR023
+U 1 1 5E034C38
+P 9750 4400
+F 0 "#PWR023" H 9750 4150 50  0001 C CNN
+F 1 "GND" H 9750 4250 50  0000 C CNN
+F 2 "" H 9750 4400 50  0000 C CNN
+F 3 "" H 9750 4400 50  0000 C CNN
+	1    9750 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 4400 9750 4300
+Wire Wire Line
+	9750 4300 10550 4300
+Wire Wire Line
+	10550 4300 10550 3250
+Connection ~ 9750 4300
+Wire Wire Line
+	9750 4300 9750 4250
+Wire Wire Line
+	10550 2700 10550 2450
+Wire Wire Line
+	10550 2450 9750 2450
+Connection ~ 9750 2450
+Wire Wire Line
+	9750 2450 9750 2650
+$Comp
+L dk_Interface-I-O-Expanders:MCP23017-E_SP U1
+U 1 1 5DF944F2
+P 4950 5300
+F 0 "U1" H 4400 6250 60  0000 C CNN
+F 1 "MCP23017-E_SP" H 4400 6150 60  0000 C CNN
+F 2 "digikey-footprints:DIP-28_W7.62mm" H 5150 5500 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 5150 5600 60  0001 L CNN
+F 4 "MCP23017-E/SP-ND" H 5150 5700 60  0001 L CNN "Digi-Key_PN"
+F 5 "MCP23017-E/SP" H 5150 5800 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 5150 5900 60  0001 L CNN "Category"
+F 7 "Interface - I/O Expanders" H 5150 6000 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en023709" H 5150 6100 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/MCP23017-E-SP/MCP23017-E-SP-ND/894272" H 5150 6200 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC I/O EXPANDER I2C 16B 28SDIP" H 5150 6300 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 5150 6400 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 5150 6500 60  0001 L CNN "Status"
+	1    4950 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 3250 10550 3250
+Connection ~ 10550 3250
+Wire Wire Line
+	10550 3250 10550 3150
+$Comp
+L Device:R R10
+U 1 1 5E02937B
+P 10350 3150
+F 0 "R10" V 10250 3150 50  0000 C CNN
+F 1 "220" V 10350 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 10280 3150 50  0001 C CNN
+F 3 "~" H 10350 3150 50  0001 C CNN
+	1    10350 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10150 3150 10200 3150
+Wire Wire Line
+	10500 3150 10550 3150
+Connection ~ 10550 3150
+Wire Wire Line
+	10550 3150 10550 3000
+Wire Wire Line
+	9350 3750 8950 3750
+Wire Wire Line
+	9350 3950 8950 3950
+Wire Wire Line
+	9350 3850 8950 3850
+Wire Wire Line
+	9350 4050 8950 4050
+Text Label 8950 3750 0    50   ~ 0
+LCD_D4
+Text Label 8950 3850 0    50   ~ 0
+LCD_D5
+Text Label 8950 3950 0    50   ~ 0
+LCD_D6
+Text Label 8950 4050 0    50   ~ 0
+LCD_D7
+Text Label 3900 5000 0    50   ~ 0
+button_1_up
+Text Label 3900 4700 0    50   ~ 0
+button_2_down
+Text Label 3900 5100 0    50   ~ 0
+button_3_left
+Text Label 3900 4900 0    50   ~ 0
+button_4_right
+Text Label 3900 4800 0    50   ~ 0
+button_5_enter
+NoConn ~ 9350 3350
+NoConn ~ 9350 3450
+NoConn ~ 9350 3550
+NoConn ~ 9350 3650
+Wire Wire Line
+	9350 2850 8950 2850
+Wire Wire Line
+	9350 3050 8950 3050
+Text Label 8950 2850 0    50   ~ 0
+LCD_E
+Text Label 8950 3050 0    50   ~ 0
+LCD_RS
+Text Label 8950 2950 0    50   ~ 0
+LCD_RW
+Wire Wire Line
+	9350 2950 8950 2950
+Text Label 3900 5200 0    50   ~ 0
+led_1_green
+Text Label 3900 5300 0    50   ~ 0
+led_2_yellow
+Text Label 3900 5400 0    50   ~ 0
+led_3_red
+Text Label 3900 5600 0    50   ~ 0
+LCD_RS
+Text Label 3900 5700 0    50   ~ 0
+LCD_RW
+Text Label 3900 5800 0    50   ~ 0
+LCD_E
+Text Label 3900 5900 0    50   ~ 0
+LCD_D4
+Text Label 3900 6000 0    50   ~ 0
+LCD_D5
+Text Label 3900 6100 0    50   ~ 0
+LCD_D6
+Text Label 3900 6200 0    50   ~ 0
+LCD_D7
+Wire Wire Line
+	5450 4900 5650 4900
+Wire Wire Line
+	5650 4400 5050 4400
+Connection ~ 5050 4400
+Wire Wire Line
+	5050 4400 5050 4500
+Text Notes 3750 7700 0    50   ~ 0
+Set the I2C device address to '0x20'\ngrounding the A0, A1, A2 pins.
+Text Notes 5550 4300 0    50   ~ 0
+ Connect the RESET\nto the +5V voltage rail
+Text Notes 650  6550 0    50   ~ 0
+The +5V voltage rail on the Raspberry Pi\n+3.3V MAX 50 mA\n+5V MAX 300 mA
+$Comp
+L Device:R R9
+U 1 1 5E08B5FF
+P 3900 6900
+F 0 "R9" H 3970 6946 50  0000 L CNN
+F 1 "10k" H 3970 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3830 6900 50  0001 C CNN
+F 3 "~" H 3900 6900 50  0001 C CNN
+	1    3900 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E08BC83
+P 4150 6900
+F 0 "R11" H 4220 6946 50  0000 L CNN
+F 1 "10k" H 4220 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4080 6900 50  0001 C CNN
+F 3 "~" H 4150 6900 50  0001 C CNN
+	1    4150 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5E08BEF2
+P 4400 6900
+F 0 "R12" H 4470 6946 50  0000 L CNN
+F 1 "10k" H 4470 6855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4330 6900 50  0001 C CNN
+F 3 "~" H 4400 6900 50  0001 C CNN
+	1    4400 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6900 5050 7150
+Wire Wire Line
+	3900 7050 3900 7150
+Wire Wire Line
+	3900 7150 4150 7150
+Connection ~ 5050 7150
+Wire Wire Line
+	5050 7150 5050 7200
+Wire Wire Line
+	4150 7050 4150 7150
+Connection ~ 4150 7150
+Wire Wire Line
+	4150 7150 4400 7150
+Wire Wire Line
+	4400 7050 4400 7150
+Connection ~ 4400 7150
+Wire Wire Line
+	4400 7150 5050 7150
+Wire Wire Line
+	4650 6500 3900 6500
+Wire Wire Line
+	3900 6500 3900 6750
+Wire Wire Line
+	4650 6600 4150 6600
+Wire Wire Line
+	4150 6600 4150 6750
+Wire Wire Line
+	4650 6700 4400 6700
+Wire Wire Line
+	4400 6700 4400 6750
+$Comp
+L Device:Jumper_NC_Small JP1
+U 1 1 5E0D8C12
+P 3600 6500
+F 0 "JP1" H 3450 6550 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3600 6621 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6500 50  0001 C CNN
+F 3 "~" H 3600 6500 50  0001 C CNN
+	1    3600 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP2
+U 1 1 5E0DB6E4
+P 3600 6600
+F 0 "JP2" H 3450 6650 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3600 6721 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6600 50  0001 C CNN
+F 3 "~" H 3600 6600 50  0001 C CNN
+	1    3600 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP3
+U 1 1 5E0DB906
+P 3600 6700
+F 0 "JP3" H 3450 6750 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 3600 6821 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3600 6700 50  0001 C CNN
+F 3 "~" H 3600 6700 50  0001 C CNN
+	1    3600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6700 3700 6700
+Connection ~ 4400 6700
+Wire Wire Line
+	4150 6600 3700 6600
+Connection ~ 4150 6600
+Wire Wire Line
+	3900 6500 3700 6500
+Connection ~ 3900 6500
+$Comp
+L power:+5V #PWR025
+U 1 1 5E0F7CE4
+P 3350 6350
+F 0 "#PWR025" H 3350 6200 50  0001 C CNN
+F 1 "+5V" H 3350 6490 50  0000 C CNN
+F 2 "" H 3350 6350 50  0000 C CNN
+F 3 "" H 3350 6350 50  0000 C CNN
+	1    3350 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 6350 3350 6500
+Wire Wire Line
+	3350 6500 3500 6500
+Wire Wire Line
+	3350 6500 3350 6600
+Wire Wire Line
+	3350 6600 3500 6600
+Connection ~ 3350 6500
+Wire Wire Line
+	3500 6700 3350 6700
+Wire Wire Line
+	3350 6700 3350 6600
+Connection ~ 3350 6600
+NoConn ~ 5450 5100
+NoConn ~ 5450 5000
+$Comp
+L Device:R R13
+U 1 1 5E167F77
+P 5650 4650
+F 0 "R13" H 5720 4696 50  0000 L CNN
+F 1 "10k" H 5720 4605 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5580 4650 50  0001 C CNN
+F 3 "~" H 5650 4650 50  0001 C CNN
+	1    5650 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4400 5650 4500
+Wire Wire Line
+	5650 4800 5650 4900
+NoConn ~ 4650 5500
+NoConn ~ 700  1350
+NoConn ~ 700  1550
+NoConn ~ 700  1650
+NoConn ~ 700  1750
+NoConn ~ 700  1950
+NoConn ~ 700  2050
+NoConn ~ 700  2150
+NoConn ~ 700  2350
+NoConn ~ 700  2450
+NoConn ~ 700  2550
+NoConn ~ 700  2650
+NoConn ~ 700  2750
+NoConn ~ 700  2850
+NoConn ~ 3400 1350
+NoConn ~ 3400 1450
+NoConn ~ 3400 1550
+NoConn ~ 3400 1750
+NoConn ~ 3400 1850
+NoConn ~ 3400 2050
+NoConn ~ 3400 2150
+NoConn ~ 3400 2250
+NoConn ~ 3400 2350
+NoConn ~ 3400 2550
+NoConn ~ 3400 2750
+NoConn ~ 3400 2850
+NoConn ~ 3400 2950
+Text Notes 650  6200 0    50   ~ 0
+MAX Current draw for MCP23017\n125 mA
+$EndSCHEMATC
