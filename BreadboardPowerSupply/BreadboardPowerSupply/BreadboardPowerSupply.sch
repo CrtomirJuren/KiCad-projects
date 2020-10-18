@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:BreadboardPowerSupply-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "Breadboard Power Supply"
-Date "2019-11-30"
+Date "2020-10-18"
 Rev "v1"
 Comp ""
 Comment1 "Designed by Črtomir Juren"
@@ -33,6 +32,7 @@ F 0 "D1" V 3904 4029 50  0000 L CNN
 F 1 "1N4007" V 3995 4029 50  0000 L CNN
 F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3950 3775 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3950 3950 50  0001 C CNN
+F 4 "https://si.farnell.com/multicomp-pro/1n4007/rectifier-single-1a-1kv-do-204al/dp/2675796?st=1n4007" V 3950 3950 50  0001 C CNN "Shop"
 	1    3950 3950
 	0    1    1    0   
 $EndComp
@@ -74,7 +74,7 @@ L Device:CP C1
 U 1 1 5DE30E49
 P 5100 4250
 F 0 "C1" H 5218 4296 50  0000 L CNN
-F 1 "CP" H 5218 4205 50  0000 L CNN
+F 1 "470u" H 5218 4205 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5138 4100 50  0001 C CNN
 F 3 "~" H 5100 4250 50  0001 C CNN
 	1    5100 4250
@@ -85,7 +85,7 @@ L Device:CP C2
 U 1 1 5DE31683
 P 6350 4250
 F 0 "C2" H 6468 4296 50  0000 L CNN
-F 1 "CP" H 6468 4205 50  0000 L CNN
+F 1 "47u" H 6468 4205 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 6388 4100 50  0001 C CNN
 F 3 "~" H 6350 4250 50  0001 C CNN
 	1    6350 4250
@@ -118,7 +118,7 @@ L Device:R R1
 U 1 1 5DE32D1E
 P 6800 4050
 F 0 "R1" H 6730 4004 50  0000 R CNN
-F 1 "R" H 6730 4095 50  0000 R CNN
+F 1 "220" H 6730 4095 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6730 4050 50  0001 C CNN
 F 3 "~" H 6800 4050 50  0001 C CNN
 	1    6800 4050
@@ -129,7 +129,7 @@ L Device:R R2
 U 1 1 5DE3329D
 P 8050 4050
 F 0 "R2" H 7980 4004 50  0000 R CNN
-F 1 "R" H 7980 4095 50  0000 R CNN
+F 1 "220" H 7980 4095 50  0000 R CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7980 4050 50  0001 C CNN
 F 3 "~" H 8050 4050 50  0001 C CNN
 	1    8050 4050
@@ -9205,12 +9205,12 @@ N2 - \nBridge rectifier
 Text Notes 4900 3100 0    50   ~ 0
 N3 - \nVoltage Regulator
 Text Notes 6650 3100 0    50   ~ 0
-N4 -\nInput\nPower\nIndicator
+N4 -\nIN Power\nIndicator
 Text Notes 7150 3100 0    50   ~ 0
 N5 - \nOn/Off\nSwitch
 Text Notes 7950 3100 0    50   ~ 0
-N6 -\nOutput\nPower\nIndicator
-Text Notes 8350 3100 0    50   ~ 0
+N6 -\nOUT Power\nIndicator
+Text Notes 8450 3100 0    50   ~ 0
 N7 - \nPower Output
 Connection ~ 8600 4650
 Wire Wire Line

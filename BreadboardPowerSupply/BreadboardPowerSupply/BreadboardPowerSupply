@@ -1,0 +1,10 @@
+Reference, Quantity, Value, Footprint, Datasheet, Shop
+C1 ,1,"CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~"
+C2 ,1,"CP","Capacitor_THT:CP_Radial_D6.3mm_P2.50mm","~"
+D1 D3 D2 D4 ,4,"1N4007","Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal","http://www.vishay.com/docs/88503/1n4001.pdf","https://si.farnell.com/multicomp-pro/1n4007/rectifier-single-1a-1kv-do-204al/dp/2675796?st=1n4007"
+D5 D6 ,2,"LED","LED_THT:LED_D5.0mm","~"
+J1 ,1,"Barrel_Jack_Switch","Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal","~"
+J2 J3 ,2,"Conn_02x02_Odd_Even","Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical","~"
+R1 R2 ,2,"R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~"
+SW1 ,1,"SW_DPDT_x2","digikey-footprints:Switch_Slide_11.6x4mm_EG1218",""
+U1 ,1,"LM7805_TO220","Package_TO_SOT_THT:TO-220-3_Vertical","http://www.fairchildsemi.com/ds/LM/LM7805.pdf"
