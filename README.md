@@ -8,7 +8,7 @@
 
 ## Shematics Design Process
 
-![ShematicDesignProcess](C:\Users\crtom\Documents\KiCad-projects.git\slike\ShematicDesignProcess.png)
+![ShematicDesignProcess](slike/ShematicDesignProcess.png)
 
 ### 1 Setup
 
@@ -30,7 +30,7 @@
 
 ## PCB Design Process
 
-![PCBDesignProcess](C:\Users\crtom\Documents\KiCad-projects.git\slike\PCBDesignProcess.png)
+![PCBDesignProcess](slike/PCBDesignProcess.png)
 
 #### 1 Setup
 
