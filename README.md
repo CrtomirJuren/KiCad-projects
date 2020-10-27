@@ -46,6 +46,23 @@
 
 #### 7 Manufacture
 
+7.a) Create Gerber Files
+
+<img src="slike/PCB Design Gerber Files.png" alt="PCB Design Gerber Files" style="zoom: 80%;" />
+
+7.b) Create Drill Files
+
+<img src="slike/PCB Design Drill Files.png" alt="PCB Design Drill Files" style="zoom:80%;" />
+
+7.c) Validate Files: 
+
+- compress gerber folder
+- upload and check: https://www.gerblook.org/
+
+7.d) pcbway OshPark
+
+
+
 ### Plugins List
 
 #### InteractiveHtmlBom

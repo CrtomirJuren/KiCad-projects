@@ -15,7 +15,7 @@ Output voltage: 5V
 
 ## Shematics - EESchema
 
-![shematics eeschema](C:\Users\crtom\Documents\KiCad-projects.git\BreadboardPowerSupply\pictures\shematics eeschema.png)
+![shematics eeschema](pictures/shematics eeschema.png)
 
 ## Physical Dimensions
 
@@ -25,14 +25,14 @@ PCB dimensions: 52,070mm* 30,48mm
 
 ##	PCB - Pcbnew
 
-![PCB dimensions 2D](C:\Users\crtom\Documents\KiCad-projects.git\BreadboardPowerSupply\pictures\PCB dimensions 2D.png)
+![PCB dimensions 2D](pictures/PCB dimensions 2D.png)
 
-![PCB dimensions 2D v2](C:\Users\crtom\Documents\KiCad-projects.git\BreadboardPowerSupply\pictures\PCB dimensions 2D v2.png)
+![PCB dimensions 2D v2](pictures/PCB dimensions 2D v2.png)
 
 ##	3D View
-![PCB dimensions 3D](C:\Users\crtom\Documents\KiCad-projects.git\BreadboardPowerSupply\pictures\PCB dimensions 3D.png)
+![PCB dimensions 3D](pictures/PCB dimensions 3D.png)
 
-![PCB dimensions 3D v2](C:\Users\crtom\Documents\KiCad-projects.git\BreadboardPowerSupply\pictures\PCB dimensions 3D v2.png)
+![PCB dimensions 3D v2](pictures/PCB dimensions 3D v2.png)
 
 ## Bill of Materials - BOM
 
