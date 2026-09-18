@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "TQ2-2M-12V")(type "KiCad")(uri "${KIPRJMOD}/custom_libraries/symbols/TQ2-2M-12V.kicad_sym")(options "")(descr ""))
+  (lib (name "SIL24-1A72-71D")(type "KiCad")(uri "${KIPRJMOD}/custom_libraries/symbols/SIL24-1A72-71D.kicad_sym")(options "")(descr ""))
+)

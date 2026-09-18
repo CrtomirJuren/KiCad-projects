@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "OIL_SENSOR_CUSTOM_FP")(type "KiCad")(uri "${KIPRJMOD}/custom_libraries/footprints/footprints.pretty")(options "")(descr ""))
+)
